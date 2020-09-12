@@ -1,0 +1,79 @@
+
+<%- include("./partials/head.ejs") %>
+
+<body id="page-top">
+
+  <div id="wrapper">
+
+    <%- include("./partials/sideBar.ejs") %>
+   
+    <div id="content-wrapper" class="d-flex flex-column">
+   
+      <div id="content">
+    
+            <%- include("./partials/topbar.ejs") %>
+       
+
+          <div class="container-fluid">
+            
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <a
+                class="delete"
+                data-doc="<%= blog._id %>"
+                class="delete d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+              >
+                <img src="/trashcan.svg" alt="delete icon" />Delete Blog
+              </a>
+            </div>
+
+            <div class="details content">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="title m-0 font-weight-bold text-primary">
+                    <%= blog.title %>
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <p></p>
+                  <p><%= blog.body %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      
+         
+              <%- include("./partials/footer.ejs") %>
+             
+            </div>
+         
+          </div>
+          
+          <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+          </a>
+      
+          <%- include("./partials/lout.ejs") %>
+      
+          <script>
+            const trashcan = document.querySelector("a.delete");
+      
+            trashcan.addEventListener("click", (e) => {
+              const endpoint = `/blogs/${trashcan.dataset.doc}`;
+      
+              fetch(endpoint, {
+                method: "DELETE",
+              })
+                .then((response) => response.json())
+                .then((data) => (window.location.href = data.redirect))
+                .catch((err) => console.log(err));
+            });
+          </script>
+
+         
+          <%- include("./partials/btrap.ejs") %>
+        </body>
+      </html>
