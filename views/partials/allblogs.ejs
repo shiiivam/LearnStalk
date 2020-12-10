@@ -1,0 +1,30 @@
+<h1 class="h3 mb-0 text-gray-800">All Blogs</h1>
+              <a
+                href="#"
+                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+                ><i class="fas fa-download fa-sm text-white-50"></i>Filter</a
+              >
+            </div>
+              <% if (blogs.length > 0) { %> <% blogs.forEach(blog => { %>
+                <div class="blogs content">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <a  class="single" href="/<%= blog._id %>">
+                  <h6 class="title m-0 font-weight-bold text-primary">
+                    <%= blog.title %>
+                    
+                  </h6>
+                </div>
+              
+                <div class="card-body">
+                  <p class="snippet">
+                    <%= blog.snippet %>
+                  </p>
+                 </a>
+                 </div>
+                </div>
+                <% }) %> <% } else { %>
+                    <p>There are no blogs to display...</p>
+                    <% } %>
+              </div>
+                 

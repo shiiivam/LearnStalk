@@ -1,0 +1,150 @@
+<%- include("./partials/head.ejs") %>
+
+  <body id="page-top">
+   
+    <div id="wrapper">
+ 
+      <%- include("./partials/sideBar.ejs") %>
+      
+
+      <div id="content-wrapper" class="d-flex flex-column">
+        
+        <div id="content">
+      
+              <%- include("./partials/topbar.ejs") %>
+          
+
+          
+
+          <div class="container-fluid">
+      
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Create Assignment</h1>
+            </div>
+          
+              
+              
+
+            <div class="col-lg-12">
+
+              <div class="card position-relative">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Please Fill Assignment Details Below</h6>
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                   
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Paste Complete Questions with Instructions</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div><br>
+                  <p>Or</p>
+                  
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                      <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+                    </div>
+                  </div>
+                  <br><br>
+                  <script>$('.datepicker').datepicker({
+                    inline: true
+                  });</script>
+                  <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                    <input placeholder="Select date" type="text" id="example" class="form-control">
+                    <label for="example">Try me...</label>
+                    <i class="fas fa-calendar input-prefix"></i>
+                  </div>
+
+                  
+
+<!-- Popup -->
+
+<div
+  class="modal fade"
+  id="Assign"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+        <button
+          class="close"
+          type="button"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Assignment assigned successfully!
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">
+          Cancel
+        </button>
+        <a class="btn btn-primary" href="/users/logout">Logout</a>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+                  
+                  
+                  <div class="dropdown mb-4">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select Class To Assign
+                    </button>
+                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Cse - A (III)</a>
+                      <a class="dropdown-item" href="#">Cse - G (II)</a>
+                      <a class="dropdown-item" href="#">Cse - B (IV)</a>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary sidebar-toggled" type="button" data-toggle="modal"
+                  data-target="#Assign" id="MenuButton">Create</button>
+                  <br> <br>
+                   </div>
+              </div>
+
+            </div>
+            <!-- CREATE ASSIGN COMPLETE -->
+
+              
+            </div>  
+        </div>
+        
+
+      
+        <%- include("./partials/footer.ejs") %>
+  
+      </div>
+      
+    </div>
+
+
+    
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    
+    <%- include("./partials/lout.ejs") %>
+
+    
+    <%- include("./partials/btrap.ejs") %>
+  </body>
+</html>

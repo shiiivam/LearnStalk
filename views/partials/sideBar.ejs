@@ -6,7 +6,7 @@
  
   <a
     class="sidebar-brand d-flex align-items-center justify-content-center"
-    href="index.html"
+    href="dashboard"
   >
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas">
@@ -31,7 +31,7 @@
     </div>
     <div class="sidebar-brand-text mx-3">
       BrainStalk
-      <sup>2</sup>
+      <sup>BS</sup>
     </div>
   </a>
 
@@ -102,7 +102,7 @@
     >
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Assignments</h6>
-        <a class="collapse-item" href="buttons.html">
+        <a class="collapse-item" href="createAssign">
           <svg
             width="1em"
             height="1em"
@@ -122,9 +122,9 @@
               d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5z"
             />
           </svg>
-          Create Assignments
+          Submit Assignments
         </a>
-        <a class="collapse-item" href="cards.html">
+        <!-- <a class="collapse-item" href="ReceivedAssign">
           <svg
             width="1em"
             height="1em"
@@ -137,16 +137,16 @@
               fill-rule="evenodd"
               d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"
             />
-            <path
+             <path
               fill-rule="evenodd"
               d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"
             />
           </svg>
           Received Assignments
-        </a>
+        </a> 
       </div>
     </div>
-  </li>
+  </li> -->
 
   
   <li class="nav-item">
@@ -177,9 +177,8 @@
     >
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">My Performance</h6>
-        <a class="collapse-item" href="#">Scores</a>
-        <a class="collapse-item" href="/attendance">Attendance</a>
-        <a class="collapse-item" href="#">Projects</a>
+        <a class="collapse-item" href="scores">Grades</a>
+        <a class="collapse-item" href="attendance">Attendance</a>
         
       </div>
     </div>
@@ -188,7 +187,7 @@
 
   <hr class="sidebar-divider" />
 
-  <div class="sidebar-heading"> Quiz & Course Content</div>
+  <div class="sidebar-heading"> Schedule & Course Content</div>
 
 
   <li class="nav-item">
@@ -201,7 +200,7 @@
       aria-controls="collapsePages"
     >
       <i class="fas fa-fw fa-folder"></i>
-      <span>Quiz and Content</span>
+      <span>Schedule and Content</span>
     </a>
     <div
       id="collapsePages"
@@ -210,30 +209,27 @@
       data-parent="#accordionSidebar"
     >
       <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Quiz</h6>
-        <a class="collapse-item" href="login.html">Attend Quiz</a>
-        <a class="collapse-item" href="register.html">Quiz Reports</a>
-        <a class="collapse-item" href="forgot-password.html">Responses</a>
-        <div class="collapse-divider"></div>
+        
         <h6 class="collapse-header">Course</h6>
-        <a class="collapse-item" href="login.html">Learning Content</a>
-        <a class="collapse-item" href="register.html">Syllaybus</a>
-        <a class="collapse-item" href="forgot-password.html">Time Table</a>
+        <a class="collapse-item" href="content">Learning Content</a>
+        <a class="collapse-item dropdown-toggle" id="dropdownMenuReceived" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20" href="https://brainstalk-assignments.s3.ap-south-1.amazonaws.com/ShivamSharma_2018004547.docx">Syllaybus</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuReceived">
+          <a class="dropdown-item" href="https://brainstalk-assignments.s3.ap-south-1.amazonaws.com/ShivamSharma_2018004547.docx">CCV</a>
+        
+        </div>
+        <a class="collapse-item" href="https://brainstalk-assignments.s3.ap-south-1.amazonaws.com/ShivamSharma_2018004547.docx">Time Table</a>
         
       </div> 
     </div>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link" href="charts.html">
-      <i class="fas fa-fw fa-chart-area"></i>
-      <span>Attend Live Class</span></a
-    >
+ 
   </li>
 
 
   <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+    <a class="nav-link" href="details">
       <i class="fas fa-fw fa-table"></i>
       <span>Personal Details</span></a
     >

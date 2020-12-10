@@ -1,0 +1,102 @@
+
+<%- include("./partials/head.ejs") %>
+
+<body id="page-top">
+ 
+  <div id="wrapper">
+
+    <%- include("./partials/sideBar.ejs") %>
+    
+
+    <div id="content-wrapper" class="d-flex flex-column">
+      
+      <div id="content">
+    
+            <%- include("./partials/topbar.ejs") %>
+        
+
+        
+
+            <div class="container-fluid">
+
+              <!-- Page Heading -->
+              <h1 class="h3 mb-2 text-gray-800">Assigned Assignments</h1>
+              
+              <!-- DataTales Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Assigned On - 04-Dec-2020</h6>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Subject</th>
+                          <th>Published On</th>
+                          <th><center>Save Notes</center></th>
+                         
+                          <!-- <th>Assignment</th> -->
+                          
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>Subject</th>
+                          <th>Published On</th>
+                          <th><center>Save Notes</center></th>
+                          
+                          <!-- <th>Assignment</th> -->
+                          
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td>CCV</td>
+                          <td>04-Dec-20</td>
+                          <td><center><a href="https://brainstalk-assignments.s3.ap-south-1.amazonaws.com/ShivamSharma_2018004547.docx"><button class="btn btn-success sidebar-toggled">Download</button></a></center></td>
+                          
+                          
+</td>
+                          
+                          
+                        </tr>
+                        
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <!-- /.container-fluid -->
+    
+          </div>
+          <!-- CREATE ASSIGN COMPLETE -->
+
+            
+          </div>  
+      </div>
+      
+
+    
+      <%- include("./partials/footer.ejs") %>
+
+    </div>
+    
+  </div>
+
+
+  
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  
+  <%- include("./partials/lout.ejs") %>
+
+  
+  <%- include("./partials/btrap.ejs") %>
+</body>
+</html>

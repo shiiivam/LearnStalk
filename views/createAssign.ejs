@@ -1,0 +1,145 @@
+
+<%- include("./partials/head.ejs") %>
+
+  <body id="page-top">
+   
+    <div id="wrapper">
+ 
+      <%- include("./partials/sideBar.ejs") %>
+      
+
+      <div id="content-wrapper" class="d-flex flex-column">
+        
+        <div id="content">
+      
+              <%- include("./partials/topbar.ejs") %>
+          
+
+          
+
+              <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <h1 class="h3 mb-2 text-gray-800">Assigned Assignments</h1>
+                
+                <!-- DataTales Example -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Assigned On - 04-Dec-2020</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Last Date of Submission</th>
+                            <th>Assignment</th>
+                            <th><center>Submit</center></th>
+                            <!-- <th>Assignment</th> -->
+                            
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Last Date of Submission</th>
+                            <th>Assignment</th>
+                            <th><center>Submit</center></th>
+                            <!-- <th>Assignment</th> -->
+                            
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>CCV</td>
+                            <td>05-Dec-20</td>
+                            <td><center><a href="https://brainstalk-assignments.s3.ap-south-1.amazonaws.com/ShivamSharma_2018004547.docx"><button class="btn btn-success sidebar-toggled">Download</button></a></center></td>
+                            
+                            <td><div class="input-group">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                                <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                              </div>
+                              <!-- Popup -->
+
+<div
+class="modal fade"
+id="Assign"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+      <button
+        class="close"
+        type="button"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      Assignment submitted successfully!
+    </div>
+    <!-- <div class="modal-footer">
+      <button class="btn btn-secondary" type="button" data-dismiss="modal">
+        Cancel
+      </button>
+      <a class="btn btn-primary" href="/users/logout">Logout</a>
+    </div> -->
+  </div>
+</div>
+</div>
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" data-toggle="modal"
+                                data-target="#Assign" type="button" id="inputGroupFileAddon04">Submit</button>
+                              </div>
+                            </div></td>
+                            
+                            
+                          </tr>
+                          
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!-- /.container-fluid -->
+      
+            </div>
+            <!-- CREATE ASSIGN COMPLETE -->
+
+              
+            </div>  
+        </div>
+        
+
+      
+        <%- include("./partials/footer.ejs") %>
+  
+      </div>
+      
+    </div>
+
+
+    
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    
+    <%- include("./partials/lout.ejs") %>
+
+    
+    <%- include("./partials/btrap.ejs") %>
+  </body>
+</html>
